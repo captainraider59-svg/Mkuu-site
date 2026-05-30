@@ -77,6 +77,21 @@
     🎯 SIRI YANGU: Mwaka 2026 nitakuwa Developer ninayelipwa Milioni! 💰<br>
     Na wewe unaweza pia! Anza kujifunza leo! ✊
 </p>
+        <br>
+<hr>
+<h2>WEKA ORDER YAKO HAPA 📝</h2>
+
+<input type="text" id="jina" placeholder="Andika Jina Lako" style="width: 80%; padding: 12px; margin: 8px; border-radius: 8px; border: none;">
+
+<input type="text" id="bidhaa" placeholder="Unataka Bidhaa Gani?" style="width: 80%; padding: 12px; margin: 8px; border-radius: 8px; border: none;">
+
+<input type="number" id="idadi" placeholder="Idadi Ngapi?" style="width: 80%; padding: 12px; margin: 8px; border-radius: 8px; border: none;">
+
+<br>
+<button onclick="tumaWhatsApp()" style="background: #25D366; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-size: 18px; margin-top: 10px;">
+    Tuma Order WhatsApp 📱
+</button>
+<br><br>
         <hr style="border: 1px solid #00ff88; margin: 30px 0;">
         
         <h3 style="color: #00ff88;">🎯 Malengo Yangu 2026:</h3>
@@ -113,6 +128,24 @@ function onyeshaSiri() {
         alert('Siri imefichwa tena! 🤫');
     }
 }
+        function tumaWhatsApp() {
+    var jina = document.getElementById('jina').value;
+    var bidhaa = document.getElementById('bidhaa').value;
+    var idadi = document.getElementById('idadi').value;
+    
+    if (jina === '' || bidhaa === '' || idadi === '') {
+        alert('MKUU JAZA SEHEMU ZOTE KWANZA! 😤');
+        return;
+    }
+    
+    var nambaYako = '255712345678'; // <-- BADILISHA WEKA NAMBA YAKO HAPA
+    
+    var ujumbe = `Habari MKUU!%0A%0ANaitwa: ${jina}%0ANaomba Order:%0A*Bidhaa:* ${bidhaa}%0A*Idadi:* ${idadi}%0A%0ANisubiri majibu yako 🙏`;
+    
+    var link = `https://wa.me/${nambaYako}?text=${ujumbe}`;
+    
+    window.open(link, '_blank');
+        }
 </script>
 </body>
 </html>

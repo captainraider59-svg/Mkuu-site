@@ -67,7 +67,7 @@
         <h2>Huyu ni Mkuu - Developer!</h2>
         <p>Hongera! Hii ni website yangu ya kwanza.</p>
         <p class="red-text">Nimetengeneza na simu yangu!</p>
-        <button onclick="alert('MKUU NI BALAA! 🔥')">Nibonyeze</button>
+        <button onclick="badiliRangi()">Nibonyeze</button>
         
         <hr style="border: 1px solid #00ff88; margin: 30px 0;">
         
@@ -87,6 +87,13 @@
         
         <p style="font-size: 12px; opacity: 0.7;">© 2026 Mkuu Developer. Imetengenezwa na Simu 📱</p>
         <p>Level 6 Imeisha ✅</p>
-    </div>
+    <script>
+function badiliRangi() {
+    var rangi = ['#ff0066', '#00ff88', '#0066ff', '#ff6600', '#9900ff'];
+    var rangiRandom = rangi[Math.floor(Math.random() * rangi.length)];
+    document.body.style.background = rangiRandom;
+    alert('MKUU NI BALAA! 🔥 Rangi imebadilika!');
+}
+    </script>
 </body>
 </html>

@@ -68,7 +68,15 @@
         <p>Hongera! Hii ni website yangu ya kwanza.</p>
         <p class="red-text">Nimetengeneza na simu yangu!</p>
         <button onclick="badiliRangi()">Nibonyeze</button>
-        
+        <br><br>
+<button onclick="onyeshaSiri()" style="background: #ff0066; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-size: 18px;">
+    Onyesha Siri Yangu 🤫
+</button>
+
+<p id="siri"style="display: none; background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; margin-top: 20px;">
+    🎯 SIRI YANGU: Mwaka 2026 nitakuwa Developer ninayelipwa Milioni! 💰<br>
+    Na wewe unaweza pia! Anza kujifunza leo! ✊
+</p>
         <hr style="border: 1px solid #00ff88; margin: 30px 0;">
         
         <h3 style="color: #00ff88;">🎯 Malengo Yangu 2026:</h3>
@@ -89,7 +97,32 @@
         <p>Level 6 Imeisha ✅</p>
     <script>
 function badiliRangi() {
-    var rangi = ['#ff0066', '#00ff88', '#0066ff', '#ff6600', '#9900ff'];
+    var rangi = ['#ff0066', '#00ff88', '#0066ff'h, '#ff6600', '#9900ff'];
+    var rangiRandom = rangi[Math.floor(Math.random() * rangi.length)];
+    document.body.style.background = rangiRandom;
+    alert('MKUU NI BALAA! 🔥 Rangi imebadilika!');
+} 
+
+function onyeshaSiri() {
+    var ujumbe = document.getElementById('siri');
+    if (ujumbe.style.display === 'none') {
+        ujumbe.style.display = 'block';
+        alert('Siri imefunuliwa! 👀');
+    } else {
+        ujumbe.style.display = 'none';
+        alert('Siri imefichwa tena! 🤫');
+    }
+}
+</script>
+    var ujumbe = document.getElementById('siri');
+    if (ujumbe.style.display === 'none') {
+        ujumbe.style.display = 'block';
+        alert('Siri imefunuliwa! 👀');
+    } else {
+        ujumbe.style.display = 'none';
+        alert('Siri imefichwa tena! 🤫');
+    }
+        }var rangi = ['#ff0066', '#00ff88', '#0066ff', '#ff6600', '#9900ff'];
     var rangiRandom = rangi[Math.floor(Math.random() * rangi.length)];
     document.body.style.background = rangiRandom;
     alert('MKUU NI BALAA! 🔥 Rangi imebadilika!');
